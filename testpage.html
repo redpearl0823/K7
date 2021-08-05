@@ -64,25 +64,6 @@
             </div>
         </div>
         <script src="./js/test.js"></script>
-        <script type="text/javascript">
-	  Kakao.init('d6301868b77a02fa536be14be31c7862'); // 초기화
-
-	  function sendLink() { // 카카오톡 공유하기
-	    Kakao.Link.sendDefault({
-	      objectType: 'text',
-	      text: test.result,
-	      link: {
-	        mobileWebUrl: 'https://developers.kakao.com',
-	        webUrl: 'https://developers.kakao.com',
-	      },
-	    })
-	  }
-	  function shareStoryWeb() { // 카카오 스토리 공유하기
-	    Kakao.Story.share({
-	      url: 'https://developers.kakao.com',
-	      text: test.result,
-	    })
-	  }
-       </script>
+       
     </body>
 </html>
