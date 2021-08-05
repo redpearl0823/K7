@@ -70,7 +70,7 @@
 	  function sendLink() { // 카카오톡 공유하기
 	    Kakao.Link.sendDefault({
 	      objectType: 'text',
-	      text: result,
+	      text: {{result}},
 	      link: {
 	        mobileWebUrl: 'https://developers.kakao.com',
 	        webUrl: 'https://developers.kakao.com',
@@ -80,7 +80,7 @@
 	  function shareStoryWeb() { // 카카오 스토리 공유하기
 	    Kakao.Story.share({
 	      url: 'https://developers.kakao.com',
-	      text: result,
+	      text: {{result}},
 	    })
 	  }
        </script>
