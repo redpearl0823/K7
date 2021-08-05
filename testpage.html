@@ -12,7 +12,7 @@
         <div id="test">
             <!-- 도입부 -->
             <div id="intro" class="intro-wrap">
-		     <img src="https://www.7-eleven.co.kr/front/img/com/logo.png" align = 'center' >
+		     <img src="https://www.7-eleven.co.kr/front/img/com/logo.png" align = "center" >
                 <div class="intro">
                     <div class="intro-story" v-on:click="start">{{intro}}</div>
                 </div>
@@ -70,7 +70,7 @@
 	  function sendLink() { // 카카오톡 공유하기
 	    Kakao.Link.sendDefault({
 	      objectType: 'text',
-	      text: 'result',
+	      text: result,
 	      link: {
 	        mobileWebUrl: 'https://developers.kakao.com',
 	        webUrl: 'https://developers.kakao.com',
