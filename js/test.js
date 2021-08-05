@@ -22,7 +22,7 @@ function shareStoryWeb() { // 카카오 스토리 공유하기
 var test = new Vue({
     el: '#test',
     data: {
-        intro: '전략기획팀 비대면면담을 시작합니다',
+        intro: '전략기획팀\n\n정서테스트',
         title: '샘플 테스트',
         currentIndex: 0,
         qna: [],
