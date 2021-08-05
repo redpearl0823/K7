@@ -1,3 +1,24 @@
+Kakao.init('d6301868b77a02fa536be14be31c7862'); // 초기화
+
+var sendMessageK = ""
+
+function sendLink() { // 카카오톡 공유하기
+Kakao.Link.sendDefault({
+	objectType: 'text',
+	text: sendMessageK,
+	link: {
+	        mobileWebUrl: 'https://developers.kakao.com',
+	        webUrl: 'https://developers.kakao.com',
+	      },
+	    })
+	  }
+function shareStoryWeb() { // 카카오 스토리 공유하기
+	Kakao.Story.share({
+	url: 'https://developers.kakao.com',
+	text: sendMessageK,
+	    })
+	  }
+       
 var test = new Vue({
     el: '#test',
     data: {
@@ -82,6 +103,7 @@ var test = new Vue({
 	this.result =  '당신은 '+this.qna[0].r+'입니다.\n\n';
             this.result +=  'Q1. 불쑥 나타난 동물 = '+this.qna[1].r+'\n=> 사람들이 나를 보는 모습\n\n';
             this.result += 'Q2. 눈 앞의 벌레 수 = '+this.qna[2].r+'마리\n=> 나를 화나게 하는 사람 수\n\n';
+	    sendMessageK = this.result;
             $('#main').hide();
             $('#result').show();
         }
