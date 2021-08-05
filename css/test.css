@@ -167,7 +167,7 @@ body {
 }
 .intro2 {
     display: table-cell;
-    text-align: center;
+    align: center;
     vertical-align: top;
 }
 .intro-story {
