@@ -163,12 +163,8 @@ body {
 .intro {
     display: table-cell;
     text-align: left;
-    vertical-align: middle;
-}
-.intro2 {
-    display: table-cell;
-    align: center;
-    vertical-align: top;
+    vertical-align:middle;
+    padding-left: 20px;
 }
 .intro-story {
     font-size: 1.5em;
