@@ -29,7 +29,7 @@ var test = new Vue({
         result: ''
     },
     beforeMount: function() {
-        this.insertQna('당신은 누구십니까?', ['이정훈', '박진형', '조세영', '최수임', '송은', '김영록', '윤유섭'], null);
+        this.insertQna('당신은 누구십니까?', ['이정X', '박진X', '조세X', '최수X', '송X', '김영X', '윤유X'], null);
         this.insertQna('Q1. 숲 속을 걷고 있는 당신 앞에 불쑥 나타난 동물! 어떤 동물일까?', null, 'text');
         this.insertQna('Q2. 당신의 눈 앞에 보이는 벌레는 몇 마리일까?', [1,2,3,4,5], null);
     },
